@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile | Profile Card</title>
+    <!-- Favicon (Sol üst sekme simgesi) -->
+    <link rel="icon" href="profil.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Arka planda uçuşan kalpler ve kurukafalar -->
+    <div id="hearts-container"></div>
+
+    <div class="card">
+        <!-- Kartın Üstünden Taşan Yuvarlak Profil Fotoğrafı -->
+        <div class="avatar-wrapper">
+            <img src="profil.jpg" alt="Profil" class="avatar-img">
+        </div>
+
+        <div class="card-content">
+            <!-- Başlık ve Kullanıcı Adı -->
+            <h1>✨ Hoş Geldin! ✨</h1>
+            <p class="status">"Seni Çok Seviyorum" Cemremmm</p>
+
+            <!-- Yavaş Yavaş Yazılan (Daktilo Efektli) Özel Mesaj Alanı -->
+            <div class="typewriter-box">
+                <p id="typewriter-text"></p>
+            </div>
+
+            <!-- Spotify Player -->
+            <div class="spotify-wrapper">
+                <iframe 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/5GpfyJrKHJI36jDKtQiyGN?utm_source=generator&theme=0" 
+                    width="100%" 
+                    height="152" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Oynatılıyor ve Tema Bilgisi -->
+            <div class="info-bar">
+                <span class="playing-text">Oynatılıyor... 🎵 - "Vicious"</span>
+                <div class="theme-badge" id="theme-badge">
+                    <span>Tema: Rock-Goth 5/5</span>
+                    <div class="toggle-dot"></div>
+                </div>
+            </div>
+
+            <!-- Alt Butonlar -->
+            <div class="action-buttons">
+                <button class="btn btn-love" onclick="sendLove()">💖 Kalp Yağdır</button>
+                <button class="btn btn-theme" onclick="changeTheme()">🎨 Işıkları Değiştir</button>
+            </div>
+
+            <!-- Alt Bilgi Notu -->
+            <p class="footer-text">Tasarım: @Yunrty |</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
